@@ -1,19 +1,19 @@
 package com.turkcell.common.events;
 import java.util.Map;
-public class InvoiceEvent {
+public class OrderEvent {
     private int customerId;
     private int accountId;
     private int serviceAddress;
     private Map<Integer, Integer> productIds;
     private float totalAmount;
-    public InvoiceEvent(int customerId, int accountId, int serviceAddress, Map<Integer, Integer> productIds, float totalAmount) {
+    public OrderEvent(int customerId, int accountId, int serviceAddress, Map<Integer, Integer> productIds, float totalAmount) {
         this.customerId = customerId;
         this.accountId = accountId;
         this.serviceAddress = serviceAddress;
         this.productIds = productIds;
         this.totalAmount = totalAmount;
     }
-    public InvoiceEvent(){
+    public OrderEvent(){
 
     }
     public int getCustomerId() {
